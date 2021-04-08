@@ -1,0 +1,28 @@
+{
+  "name": "droppin/aheadworks-storelocator-api",
+  "description": "Adds REST endpoints to Aheadworks StoreLoctaor",
+  "minimum-stability": "stable",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "morten",
+      "email": "morten@droppinstudio.dk"
+    }
+  ],
+  "require": {
+    "aheadworks/module-store-locator": ">1.*"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Droppin\\Ahstorelocator\\": ""
+    }
+  }
+}

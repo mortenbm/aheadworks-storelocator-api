@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/aheadworks-storelocator" method="POST">
+        <service class="Aheadworks\StoreLocator\Api\LocationRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Aheadworks_StoreLocator::store_locator"/>
+        </resources>
+    </route>
+    <route url="/V1/aheadworks-storelocator/:locationId" method="PUT">
+        <service class="Aheadworks\StoreLocator\Api\LocationRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Aheadworks_StoreLocator::store_locator"/>
+        </resources>
+    </route>
+    <route url="/V1/aheadworks-storelocator/:locationId" method="DELETE">
+        <service class="Aheadworks\StoreLocator\Api\LocationRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="Aheadworks_StoreLocator::store_locator"/>
+        </resources>
+    </route>
+    <route url="/V1/aheadworks-storelocator/:locationId" method="GET">
+        <service class="Aheadworks\StoreLocator\Api\LocationRepositoryInterface" method="get"/>
+        <resources>
+            <resource ref="Aheadworks_StoreLocator::store_locator"/>
+        </resources>
+    </route>
+</routes>
